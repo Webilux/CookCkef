@@ -1,0 +1,16 @@
+import { NavLink } from "react-router-dom"
+import styles from "./HeaderMenu.module.scss"
+
+function HeaderMenu() {
+  return (
+    <ul className={`${styles.MenuContainer} card p-20`}>
+      <li>Wishlist</li>
+      <li>Connexion</li>
+      <li>
+        <NavLink to="/admin">Ajouter une recette</NavLink>
+      </li>
+    </ul>
+  )
+}
+
+export default HeaderMenu
